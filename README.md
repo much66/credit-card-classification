@@ -1,20 +1,41 @@
-# 📊 Data evaluation template
+# Prediksi Persetujuan Kartu Kredit
 
-A simple Streamlit app showing how to evaluate and annotate data, using dataframes
-and charts. 
+Ini adalah aplikasi sederhana untuk memprediksi persetujuan pengajuan kartu kredit berdasarkan beberapa faktor seperti jenis pekerjaan, status pernikahan, pendidikan, dan lainnya.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://data-evaluation-template.streamlit.app/)
+## Deskripsi Proyek
 
-### How to run it on your own machine
+Proyek ini menggunakan teknik Machine Learning untuk membangun model yang dapat memprediksi apakah suatu pengajuan kartu kredit akan disetujui atau ditolak berdasarkan data input pengguna. Model yang digunakan dalam proyek ini adalah RandomForestClassifier, dan aplikasi dibangun menggunakan Streamlit untuk user interface.
 
-1. Install the requirements
+## Fitur
 
+- Input data pengguna melalui antarmuka pengguna (UI).
+- Prediksi persetujuan kartu kredit berdasarkan data input.
+- Tampilan hasil prediksi dengan menggunakan ikon indikator (✅ untuk disetujui, ❌ untuk ditolak).
+
+## Teknologi yang Digunakan
+
+- Python
+- Pandas
+- Scikit-learn
+- Streamlit
+
+## Cara Menggunakan
+
+1. Pastikan Python dan semua library yang dibutuhkan sudah terinstal.
+2. Clone repositori ini ke dalam sistem lokal Anda.
+   ```bash
+   git clone https://github.com/much66/credit-card-classification.git
    ```
-   $ pip install -r requirements.txt
+3. Masuk ke direktori proyek.
+   ```bash
+   cd credit-card-classification
    ```
-
-2. Run the app
-
+4. Instal semua dependencies yang diperlukan.
+   ```bash
+   pip install -r requirements.txt
    ```
-   $ streamlit run streamlit_app.py
+5. Jalankan aplikasi menggunakan Streamlit.
+   ```bash
+   streamlit run app.py
    ```
+6. Akses aplikasi melalui browser Anda dengan URL yang diberikan oleh Streamlit.
