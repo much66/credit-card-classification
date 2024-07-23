@@ -1,4 +1,1 @@
 streamlit
-joblib
-pickle
-scikit_learn==1.2.2
