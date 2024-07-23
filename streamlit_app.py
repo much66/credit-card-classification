@@ -4,7 +4,7 @@ import pickle
 import joblib # type: ignore
 
 scaler = joblib.load('scaler.pkl')
-model = joblib.load('credit_default.pkl')
+model = joblib.load('default_predict.joblib')
 
 st.title('Prediksi Default Loan Customer')
 
@@ -82,9 +82,9 @@ if st.button('Prediksi Loan Customer'):
     Marital_status_value = Marital_status_map[Marital_status]
     Type_Income_value = Type_Income_map[Type_Income]
 
-    card_credit = [YEAR_EMPLOYED, Type_Occupation_value, Marital_status_value, Type_Income_value, AGE, EDUCATION_value, GENDER_value, Housing_type_value, Family_Members]
+    card_credit = [GENDER_value, Type_Occupation_value, Type_Income_value, Marital_status_value, EDUCATION_value, AGE, Housing_type_value, YEAR_EMPLOYED]
 
-    df = pd.DataFrame([card_credit], columns=['YEAR_EMPLOYED', 'Type_Occupation', 'Marital_status', 'Type_Income', 'AGE', 'EDUCATION', 'GENDER', 'Housing_type', 'Family_Members'])
+    df = pd.DataFrame([card_credit], columns=['GENDER', 'Type_Occupation', 'Type_Income', 'Marital_status', 'EDUCATION', 'AGE', 'Housing_type', 'YEAR_EMPLOYED'])
     if not df.empty:
         c_scaler = scaler.transform(df.values.reshape(1, -1))
         
