@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
-import joblib
+# import joblib
+import pickle
 
-scaler = joblib.load('scaler.pkl')
-model = joblib.load('default_predict.joblib')
+# scaler = joblib.load('scaler.pkl')
+with open('scaler.pkl', 'rb') as file:
+    scaler = pickle.load(file)
+with open('credit_default.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 st.title('Prediksi Default Loan Customer')
 
