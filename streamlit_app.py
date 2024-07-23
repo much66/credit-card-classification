@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
-import joblib # type: ignore
+import joblib
 
 scaler = joblib.load('scaler.pkl')
 model = joblib.load('credit_default.pkl')
