@@ -15,7 +15,7 @@ Name  = st.text_input('Name', placeholder='Input Your Name..')
 
 # Streamlit input widgets
 GENDER = st.radio("Jenis Kelamin", ["Laki-laki", "Perempuan"])
-AGE = st.slider('Umur (Tahun)', 0, 130, 20)
+AGE = st.slider('Umur (Tahun)', 1, 130, 1)
 Type_Occupation = st.selectbox(
     "Jenis Pekerjaan",
     ("High skill tech staff", 'Core staff', 'Sales staff', 'Laborers',
@@ -30,13 +30,13 @@ Marital_status = st.selectbox(
     ('Married', 'Single / not married', 'Civil marriage', 'Separated', 'Widow'),
     placeholder="Pilih Jenis Pendapatanmu...",
 )
-Family_Members = st.slider('Jumlah Anggota Keluarga', 0, 20, 2)
+Family_Members = st.slider('Jumlah Anggota Keluarga', 1, 20, 2)
 Type_Income = st.selectbox(
     "Jenis Pendapatan",
     ('Commercial associate', 'Pensioner', 'Working', 'State servant'),
     placeholder="Pilih Jenis Pendapatanmu...",
 )
-YEAR_EMPLOYED = st.slider('Lama Bekerja (Tahun)', 0, 60, 5)
+YEAR_EMPLOYED = st.slider('Lama Bekerja (Tahun)', 0, 60, 1)
 EDUCATION = st.selectbox(
     "Pendidikan",
     ('Higher education', 'Secondary / secondary special', 'Lower secondary',
