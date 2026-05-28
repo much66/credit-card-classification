@@ -1,6 +1,6 @@
 # Prediksi Persetujuan Kartu Kredit
 
-Ini adalah aplikasi sederhana untuk memprediksi persetujuan pengajuan kartu kredit berdasarkan beberapa faktor seperti jenis pekerjaan, status pernikahan, pendidikan, dan lainnya.
+Ini adalah aplikasi sederhana untuk memprediksi persetujuan pengajuan kartu kredit berdasarkan beberapa faktor seperti jenis pekerjaan, status pernikahan, pendidikan, dan lainnya, untuk mengakses aplikasi bisa langsung klik https://defaultcredit-prediction-iconic.streamlit.app/.
 
 ## Deskripsi Proyek
 
