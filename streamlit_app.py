@@ -13,25 +13,18 @@ st.set_page_config(
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
-    html, body, [class*="css"] { font-family: 'Plus Jakarta Sans', sans-serif; }
-
-    .main { background: #f8f9fc; }
-
     .stButton > button {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        color: white;
-        border: none;
-        border-radius: 10px;
-        padding: 0.65rem 2rem;
-        font-weight: 600;
-        font-size: 1rem;
-        width: 100%;
-        transition: opacity 0.2s;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 10px !important;
+        padding: 0.65rem 2rem !important;
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+        width: 100% !important;
+        transition: opacity 0.2s !important;
     }
-    .stButton > button:hover { opacity: 0.85; }
-
+    .stButton > button:hover { opacity: 0.85 !important; }
     .result-card {
         border-radius: 16px;
         padding: 1.5rem 2rem;
@@ -49,9 +42,8 @@ st.markdown("""
         border-left: 6px solid #e74c3c;
         color: #c0392b;
     }
-
     .feature-card {
-        background: white;
+        background: #ffffff;
         border-radius: 12px;
         padding: 1rem 1.25rem;
         margin-bottom: 0.75rem;
@@ -61,7 +53,6 @@ st.markdown("""
     .feature-positive { border-left-color: #27ae60; }
     .feature-negative { border-left-color: #e74c3c; }
     .feature-neutral  { border-left-color: #95a5a6; }
-
     .feature-label {
         font-size: 0.78rem;
         font-weight: 600;
@@ -80,7 +71,6 @@ st.markdown("""
         color: #555;
         margin-top: 0.3rem;
     }
-
     .prob-bar-bg {
         background: #e8ecf0;
         border-radius: 999px;
@@ -91,9 +81,7 @@ st.markdown("""
     .prob-bar-fill {
         height: 12px;
         border-radius: 999px;
-        transition: width 0.6s ease;
     }
-
     .section-title {
         font-size: 1.1rem;
         font-weight: 700;
