@@ -532,6 +532,19 @@ for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
+# Guard: reset stale/invalid session values (e.g. from old code cache)
+_map_validators = {
+    'GENDER':          list(GENDER_map.keys()),
+    'Marital_status':  list(Marital_status_map.keys()),
+    'Housing_type':    list(Housing_type_map.keys()),
+    'Type_Occupation': list(Type_Occupation_map.keys()),
+    'Type_Income':     list(Type_Income_map.keys()),
+    'EDUCATION':       list(EDUCATION_map.keys()),
+}
+for _key, _valid_vals in _map_validators.items():
+    if st.session_state.get(_key) not in _valid_vals:
+        st.session_state[_key] = defaults[_key]
+
 # ── SIDEBAR ───────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("""
